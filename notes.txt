@@ -1,0 +1,36 @@
+npm init
+npm install live-server --save-dev
+$ npm install babel-core --save-dev
+
+npm install --save react 
+npm install --save react-dom
+npm install --save-dev browserify
+$ npm install --save-dev babelify
+npm install babel-preset-es2015
+npm install babel-preset-react
+npm install --save history
+npm install --save react-router@latest
+browserify script.js -o bundle.js -t [ babelify --presets [ es2015 react ] ]
+npm install --save-dev watch
+
+watch "npm run build" "screens"
+npm run build
+
+http://facebook.github.io/react/blog/2015/09/02/new-react-developer-tools.html
+
+https://github.com/btholt/es6-react-pres
+https://gist.github.com/ryanflorence/daafb1e3cb8ad740b346
+http://andrewcallahan.com/towards-a-simpler-react-folder-structure/
+<<<<<<< HEAD
+https://github.com/facebook/react/wiki/Complementary-Tools
+=======
+https://24ways.org/2015/universal-react
+>>>>>>> 26be3ae... rajakvk: router issue fixed, restructured folders/files
+
+node
+npm
+es6
+babel
+grunt
+bootrap
+webpack

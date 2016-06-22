@@ -1,0 +1,1036 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+.app {
+    overflow-x: hidden;
+}
+
+#header,
+#footer {
+    background: #0A2A3B;
+    border-bottom: 5px solid #00a7e2;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#footer {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-space {
+    padding-bottom: 50px;
+}
+
+#footer .footer-container a {
+    color: #93ad32;
+}
+
+.login-container p {
+    margin: 10px 0 20px;
+    text-align: center;
+    color: #aaa;
+}
+
+.app .error-msg,
+.app .err-msg,
+.app .err-msgs {
+    color: #d54937;
+    display: none;
+}
+
+.app .success-msg {
+    color: #00A7E2;
+    display: none;
+}
+
+.header-container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav-bar {
+    bottom: 5px;
+    position: absolute;
+    right: 0;
+}
+
+.logo-left {
+    display: inline-block;
+    float: left;
+    width: 48%;
+}
+
+.logo-left img {
+    width: 100%;
+}
+
+.main-nav {
+    float: right;
+    margin-left: 4%;
+    margin-top: 17px;
+    text-align: right;
+    width: 48%;
+}
+
+.main-nav a {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 14px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.forget-container,
+.components-list-container,
+.signup-container,
+.postad-container,
+.postad-section,
+.contactus-container,
+.individual-list-container,
+.reset-container,
+.reset-signup-container {
+    margin: 75px auto 50px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.login-container {
+    margin: auto;
+    padding: 20px;
+}
+
+#login-panel {
+    margin: 75px 0 50px;
+}
+
+.heading {
+    color: #fff;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 37px;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.highlight {
+    color: #C3D82D;
+}
+
+.login-container h1,
+h3,
+.signup-container h1,
+.postad-container h1,
+.forget-container h1,
+.contactus-container h1,
+.reset-container h1,
+.reset-signup-container h1,
+.components-list-container h1 {
+    text-align: center;
+}
+
+.components-list-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container h3 {
+    margin: 15px 0;
+}
+
+.login-form,
+.signup-form,
+.postad-form,
+.contactus-form,
+.reset-container,
+.reset-signup-container {
+    text-align: left;
+    width: 100%;
+}
+
+.login-form .credentials-wrapper label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.credentials-wrapper {
+    margin: 15px 0;
+    width: 100%;
+}
+
+.login-form .credentials-wrapper {
+    margin: 15px auto;
+}
+
+.credentials-wrapper span.required {
+    color: #D54937;
+}
+
+.credentials-wrapper input,
+.postad-form .credentials-wrapper textarea,
+.contactus-form .credentials-wrapper textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px 2px;
+    width: 100%;
+}
+
+.signup-form span,
+.login-form span,
+.forget-form span,
+.reset-form span {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.forget-form {
+    text-align: center;
+}
+
+.forget-form .credentials-wrapper label span,
+.forget-form .credentials-wrapper span {
+    width: auto;
+}
+
+.forget-form span.required {
+    width: auto;
+}
+
+.forget-form .credentials-wrapper .email-input {
+    margin: 5px 0 0 5px;
+}
+
+.postad-form .credentials-wrapper:nth-child(8) input {
+    border: none;
+}
+
+.submit-button,
+.password-button,
+.signup-button,
+.postad-button,
+.postad-section .postad-btn,
+.contactus-form .contactus-btn,
+.reset-btn {
+    background: #93ad32 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px 0 0;
+    padding: 7px 5px;
+    width: 100%;
+}
+
+.login-nav {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login-nav a {
+    color: #0074bb;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.forget-container p {
+    margin: 15px 0 25px;
+    color: #aaa;
+    text-align: center;
+}
+
+.password-button {
+    padding: 5px 15px;
+    width: auto;
+}
+
+.components-list-heading {
+    clear: both;
+    list-style: outside none none;
+}
+
+.components-list-heading li {
+    padding: 10px;
+}
+
+.components-list-heading li:nth-child(2n-1) {
+    background: #fff;
+}
+
+.components-list-heading li:nth-child(2n) {
+    background: #dceff6;
+}
+
+.components-list-heading li:first-child {
+    background: #3995ba;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+}
+
+.components-list-heading li div {
+    word-wrap: break-word;
+}
+
+.components-list-heading li:first-child div {
+    border-right: 1px solid #fff;
+}
+
+.components-list-heading li:first-child div:last-child {
+    border-right: none;
+}
+
+.components-list-heading .component-desc-list {
+    list-style: outside disc;
+    margin-left: 12px;
+}
+
+.components-list-heading .component-desc-list > li {
+    background: transparent none repeat scroll 0 0;
+    color: #000;
+    line-height: 24px;
+}
+
+.signup-form span .fa,
+.login-form span .fa,
+.forget-form span .fa,
+.reset-form span .fa {
+    position: absolute;
+    bottom: 6px;
+    left: 5px;
+}
+
+.signup-form .credentials-wrapper input,
+.login-form .credentials-wrapper input,
+.forget-form .credentials-wrapper input,
+.reset-form .credentials-wrapper input {
+    padding-left: 25px;
+}
+
+.postad-section {
+    margin: 50px auto 20px;
+    text-align: center;
+}
+
+.postad-section .postad-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*banner slider*/
+
+.homepage-section {
+    margin: 60px auto 0;
+}
+
+.banner {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel ul.images {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel ul.images li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+}
+
+.carousel ul.images li .slide-content {
+    color: #0a2a3b;
+    font-size: 12px;
+    font-weight: bold;
+    left: 20%;
+    position: absolute;
+    top: 30%;
+    width: 30%;
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: 100%;
+}
+
+ul.pagersList {
+    left: 46%;
+    list-style: outside none none;
+    margin: 0;
+    position: absolute;
+    top: 90%;
+}
+
+ul.pagersList li {
+    background-color: #00A7E2;
+    border-radius: 10px;
+    color: #ccc;
+    cursor: pointer;
+    float: left;
+    height: 15px;
+    margin: 2px 10px 1px 0;
+    width: 15px;
+    left: 43%;
+}
+
+ul.pagersList li.selected {
+    background-color: #fff;
+}
+
+.control {
+    position: absolute;
+    cursor: pointer;
+}
+
+.prev {
+    background: url('../images/arrowleft.png') no-repeat;
+    padding: 20px 8px 20px 20px;
+    left: 10%;
+    top: 47%;
+    display: none;
+}
+
+.banner .next {
+    background: url('../images/arrowright.png') no-repeat;
+    padding: 20px 8px 20px 20px;
+    right: 10%;
+    top: 47%;
+}
+
+.new-pass-cont {
+    margin-bottom: 20px;
+}
+
+.reset-signup-container {
+    display: none;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.reset-signup-container span.signup-button,
+.forget-form .password-button {
+    width: 125px;
+}
+
+.reset-signup-container span a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.components-list-container {
+    margin-top: 55px;
+}
+
+.postad-section .title {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.contactus-form .credentials-wrapper,
+.postad-form .credentials-wrapper {
+    margin: 0 auto;
+}
+
+.contactus-form .credentials-wrapper input,
+.contactus-form .credentials-wrapper textarea,
+.postad-form .credentials-wrapper input,
+.postad-form .credentials-wrapper textarea {
+    padding: 10px 6px;
+    border-radius: 5px;
+    font-weight: normal;
+}
+
+.contactus-form label,
+.postad-form label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 16px 0 8px;
+    text-align: left;
+    width: 40%;
+}
+
+.contactus-form .contactus-btn,
+.postad-form .postad-btn {
+    width: 40%;
+}
+
+.individual-list-heading {
+    list-style: outside none none;
+}
+
+.component-desc-list {
+    list-style: outside none none;
+}
+
+.individual-list-heading > li {
+    overflow: hidden;
+}
+
+.classified-details {
+    overflow: hidden;
+}
+
+.component-desc-list > li {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.individual-list-heading {
+    list-style: outside none none;
+    padding: 20px;
+}
+
+.individual-list-container {
+    background-color: #fff;
+    margin: 30px auto 50px;
+    padding: 20px;
+    width: 85%;
+}
+
+.classified-image {}
+
+.classified-image > img {
+    width: 100%;
+}
+
+.classified-name {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.classified-price {
+    color: #00a7e2;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.classified-price > span:first-child {
+    font-size: 22px;
+}
+
+.component-desc-list > li {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.myaccount-menu {
+    display: none;
+}
+
+.reset-form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.myaccount-menu {
+    background: #0a2a3b none repeat scroll 0 0;
+    color: #fff;
+    display: none;
+    list-style: outside none none;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.myaccount-menu li {
+    text-align: left;
+}
+
+
+/*pagination css*/
+
+.pagination {
+    border-radius: 4px;
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.pagination > li {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.pagination li > a {
+    border: 1px solid #ddd;
+    color: #337ab7;
+    cursor: pointer;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.previous.disabled > a,
+.next.disabled > a {
+    cursor: not-allowed;
+}
+
+li.active > a {
+    background: #337ab7;
+    border: 1px solid #337ab7;
+    color: #fff;
+}
+
+.components-list-container .search-list {
+    margin-bottom: 20px;
+    float: left;
+}
+
+.search-list input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    width: 116px;
+}
+
+.components-list-container .sort-by {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+
+/*pagination css ends*/
+
+.sort-by select {
+    background: #0a2a3b none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px 2px #ccc;
+    color: #fff;
+    padding: 5px 8px;
+    width: 116px;
+}
+
+.loading-bg {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+
+.loading-fg {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    z-index: 100001;
+    background: url('../images/loader.gif') no-repeat center;
+    background-color: #FFF;
+    opacity: 0.8;
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    display: none;
+}
+
+.components-list-heading li p:last-child,
+.components-list-heading li p span {
+    font-size: 12px;
+}
+
+.components-list-heading li p:first-child {
+    margin-bottom: 5px;
+}
+
+.components-list-heading li a {
+    color: #3995ba;
+    text-decoration: none;
+}
+
+.components-list-heading li.no-records {
+    padding: 10px;
+}
+
+@media screen and (min-width:480px) {
+    .main-nav {
+        margin-top: 26px;
+    }
+    .postad-section .postad-btn {
+        margin-left: 10px;
+    }
+    .postad-form .credentials-wrapper textarea,
+    .postad-form .credentials-wrapper input,
+    .contactus-form .credentials-wrapper textarea,
+    .contactus-form .credentials-wrapper input {
+        margin-top: 0px;
+    }
+    .signup-form label,
+    .postad-form label,
+    .contactus-form label,
+    .reset-form label {
+        display: inline-block;
+        text-align: left;
+    }
+    .reset-form label {
+        width: 220px;
+    }
+    .postad-form label {
+        vertical-align: top;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .logo-left img {
+        width: auto;
+    }
+    .login-form,
+    .signup-form,
+    .forget-form,
+    .postad-form,
+    .contactus-form,
+    .reset-container,
+    .reset-signup-container {
+        text-align: center;
+    }
+    .credentials-wrapper {
+        text-align: left;
+        width: 60%;
+    }
+    .forget-container .credentials-wrapper,
+    .signup-container .credentials-wrapper {
+        text-align: center;
+        width: 100%;
+    }
+    .signup-form span,
+    .forget-form span,
+    .reset-form span {
+        width: 60%;
+    }
+    .submit-button,
+    .password-button,
+    .signup-button,
+    .postad-button,
+    .postad-section .postad-btn,
+    .contactus-form .contactus-btn,
+    .reset-btn {
+        width: 50%;
+    }
+    .reset-form .credentials-wrapper {
+        margin: 15px auto;
+    }
+    .reset-form .new-pass-cont > span {
+        width: 100%;
+    }
+    .search-list input {
+        width: auto;
+    }
+    .login-form .credentials-wrapper {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #mobile-menu-button {
+        display: none;
+    }
+    .banner {
+        width: 76%;
+    }
+    .header-container {
+        width: 100%;
+    }
+    .header-container > a {
+        display: inline-block;
+    }
+    .header-container img {
+        width: 200px;
+    }
+    .header-container .heading {
+        margin-top: 19px;
+    }
+    #footer {
+        font-size: 15px;
+    }
+    .login-container,
+    .components-list-container,
+    .signup-container,
+    .postad-container,
+    .postad-section,
+    .contactus-container,
+    .individual-list-container,
+    .reset-container,
+    .reset-signup-container {
+        width: 76%;
+    }
+    .forget-container {
+        width: 100%;
+    }
+    .components-list-heading {
+        overflow: hidden;
+        clear: both;
+    }
+    .components-list-heading li {
+        float: left;
+        width: 100%;
+        color: #000;
+        padding: 0px;
+    }
+    .components-list-heading li:first-child {
+        display: block;
+    }
+    .components-list-heading li div {
+        float: left;
+        padding: 10px;
+        width: 33%;
+    }
+    .components-list-heading li div:first-child {
+        width: 35%;
+    }
+    .components-list-heading li div:nth-child(2) {
+        width: 45%;
+    }
+    .components-list-heading li div:last-child {
+        width: 20%;
+    }
+    .signup-form span,
+    .login-form span,
+    .forget-form span,
+    .reset-form span {
+        display: inline-block;
+    }
+    .signup-form span .fa,
+    .login-form span .fa,
+    .forget-form span .fa,
+    .reset-form span .fa {
+        left: 15px;
+        top: 13px;
+    }
+    .signup-form .credentials-wrapper input,
+    .login-form .credentials-wrapper input,
+    .forget-form .credentials-wrapper input,
+    .reset-form .credentials-wrapper input {
+        padding-left: 35px;
+    }
+    .credentials-wrapper input {
+        border-radius: 5px;
+        margin-top: 0;
+        padding: 10px 25px;
+        font-weight: bold;
+    }
+    .forget-form .password-button {
+        width: auto;
+    }
+    .new-pass-cont {
+        text-align: left;
+    }
+    .reset-form .credentials-wrapper {
+        text-align: center;
+    }
+    .reset-form .reset-btn {
+        width: 200px;
+    }
+    .main-nav {
+        margin-top: 0;
+        position: relative;
+    }
+    .main-nav a {
+        margin-top: 10px;
+    }
+    .myaccount-menu {
+        right: 0;
+    }
+    .individual-list-heading {
+        overflow: hidden;
+    }
+    .individual-list-heading > li {
+        float: left;
+        width: 100%;
+    }
+    .classified-image {
+        float: left;
+        width: 50%;
+    }
+    .classified-details {
+        float: left;
+        margin-left: 2%;
+        margin-top: 3%;
+        width: 46%;
+    }
+    .pagination {
+        float: right;
+        margin-top: 15px;
+        width: auto;
+    }
+    .search-list {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .header-container {
+        width: 80%;
+    }
+    .header-container img {
+        width: 260px;
+    }
+    .header-container .heading {
+        margin-top: 31px;
+    }
+    .main-nav {
+        margin-top: 15px;
+    }
+    .carousel ul.images li .slide-content {
+        font-size: 20px;
+    }
+    .carousel ul.images li {
+        height: 350px;
+    }
+    .credentials-wrapper,
+    .signup-form span,
+    .forget-form span,
+    .reset-form span,
+    .submit-button,
+    .password-button,
+    .signup-button,
+    .postad-button,
+    .postad-section .postad-btn,
+    .contactus-form .contactus-btn,
+    .reset-btn {
+        width: 40%;
+    }
+    .main-nav {
+        margin-top: 12px;
+    }
+    .login-container .credentials-wrapper {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .credentials-wrapper,
+    .signup-form span,
+    .forget-form span,
+    .reset-form span,
+    .submit-button,
+    .password-button,
+    .signup-button,
+    .postad-button,
+    .postad-section .postad-btn,
+    .contactus-form .contactus-btn,
+    .reset-btn {
+        width: 30%;
+    }
+    .classified-image > img {
+        height: 320px;
+    }
+    .login-form .credentials-wrapper {
+        width: 30%;
+    }
+}
+
+
+/*style for menu in mobiles*/
+
+@media screen and (max-width:767px) {
+    .header-container img {
+        width: 150px;
+    }
+    .main-nav {
+        background: #0a2a3b none repeat scroll 0 0;
+        display: none;
+        margin: 0;
+        position: absolute;
+        text-align: right;
+        top: 70px;
+        width: 250px;
+        z-index: 1;
+        right: -250px;
+        overflow-y: scroll;
+    }
+    .heading {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .main-nav a {
+        border-bottom: 1px solid #0c3d4f;
+        display: block;
+        padding: 10px;
+    }
+    .header-container .icon-bar {
+        border-radius: 1px;
+        display: block;
+        height: 2px;
+        width: 22px;
+    }
+    .header-container .navbar-toggle .icon-bar {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    }
+    .header-container .navbar-toggle .icon-bar {
+        background: #fff none repeat scroll 0 0;
+    }
+    .header-container .navbar-toggle .icon-bar + .icon-bar {
+        margin-top: 4px;
+    }
+    .navbar-toggle {
+        background-color: transparent;
+        border: 1px solid transparent;
+        float: right;
+        padding: 14px 15px;
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+.main-nav > div {
+    color: #fff;
+    margin: 0 15px 0px 0;
+    text-transform: capitalize;
+}
+
+.main-nav .user-name {
+    color: #00a7e2;
+    font-weight: bold;
+}
+
+.contact {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.mail-id,
+.phone-number {
+    font-size: 12px;
+    margin-top: 6px;
+}
